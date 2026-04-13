@@ -187,7 +187,7 @@ body {
         })
         .autocomplete({
             source: function (request, response) {
-                //alert('https://aaplesarkar.mahaonline.gov.in/Views/SearchBarCode/DisplayBarCodeData?deptName=Revenue&amp;serviceId=1251&amp;barCode=12512604032013133678');
+                //alert('https://aaplesarkar.mahaonline.gov.in/Views/SearchBarCode/DisplayBarCodeData?deptName=Revenue&amp;serviceId=1251&amp;barCode=१२५१२६५४६९८४२०१२५४९५');
                 $.getJSON('/mr/' + 'Forms/GetServiceMasterDataforSeva', {
                     //$.getJSON('https://aaplesarkar.mahaonline.gov.in/Views/SearchBarCode/DisplayBarCodeData?deptName=Revenue&amp;serviceId=1251&amp;barCode=12512604032013133678'.replace('Home', 'GetServiceMasterData'), {
                     term: extractLast(request.term)
