@@ -5881,9 +5881,18 @@ body {
                                             
                                             
 <script>
-function goLogin() {
-    window.location.href = "https://aaplesarkar.mahaonline.gov.in/Login/Login";
-}
+document.addEventListener("DOMContentLoaded", function () {
+    var closeBtn = document.querySelector('.close');
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.location.href = "https://aaplesarkar.mahaonline.gov.in/Login/Login";
+        });
+    }
+});
 </script>
                                         </body>
                                     </html>
